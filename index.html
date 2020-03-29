@@ -42,36 +42,37 @@
             setTimeout(redirect, 5000);
         }
     </script>
+    <style>
+        .header {
+            background-color: #0300a5;
+            margin-bottom: 2rem;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
-        <img src="./header.jpg" class="img-fluid" />
+        <div class="header text-white mt-3 p-4">
+            <h1>If you are here, I'm still being banned by Facebook</h1>
+        </div>
 
-        <h1 class="mt-4">Just a sec...</h1>
-
-        <img src="https://assets.change.org/photos/3/hk/um/ZgHkUMlSjEpcqro-800x450-noPad.jpg?1510074436" class="mx-auto d-block" style="max-width: 100%;" />
-
-        <p class="lead mt-3">
-            A few weeks ago, my site was hacked and all my readers got redirected to a spam site.
-            I got the issue fixed, but it was too late-- Facebook decided my site was spam, and
-            blocked all users from posting any links to it.
-        </p>
-        <p class="lead mt-3">
-            So now I have to post links like this that force you to click a button to get to my site.
-            It's annoying, but it's the only solution I have until the moderators at Facebook deign
-            to have a human review my case.
-        </p>
-        <p class="lead mt-3">
-            Click the button below to visit the page you were trying to get to. And if you <em>really</em> want to make my day,
-            <a target="_blank" style="text-decoration: underline;" href="https://www.facebook.com/help/contact/571927962827151?additional_content=AeiocznJ5HPjVmYgskJ_XZd-K6oANGo0mt9enq4TpPG9vKGl__4xVkL7GduOgrtkdFWW4LX4zuOEhRZZanFCI8uAsB6r_nAVHvMOMtmkYf4RQ6IFepMu3pfpxhMPY6JYQWR5CfsPloB3SMDr0oW_FV9rOuIORWD45_5dZVVmM9i4xzJDrsAGsC_5zdgPklFQVw7yIHP3cMjM19J-Nk-xznwxbL3HmhxrDyOTeUd6nHnOshZjFDGvjTZmVxGEROZE3IJ1-rt10roxaeI2Fkea51CNJShgmwbkFN-ELRRk84RtPgZ_AQ9ieMQuhzOQmR4ORFFf_Y8gUESFcDX_NuLIwTHVTirhGv0b2XUxNohIm82tDQje2er1RcSH2FWDLW2Lz61rcc5o4RunYUluP3Y-Biwx7P3GoH8jQEkkSaIWCDBqwTGj65FICSUCFb1jdmhllpeL1uyPPKva297rVQYb7SxPj16JWiA0_c_7_MlJIusXfr-Z6SVwWwu02qyzSa-_9vSKVkhwZ2q8vvxaUQZ0SEyHCOtxWnPMp1w_9BfrJVSxy2KE1SSInGJ7nabHgk0qdrM9aE_A55ekdr4GdbgGBU0xIZnwgD0VxijfU270ZrO2e6kIn8N0C9DsFixieMNWt4ZxOF3RABr9X53Y9NirkkWj1E5p5bx1lbQTTahWQ78qQe-OF92vV8Vz_Ehz4KsW0mBsi0Yy5eCpInf542K-CrIWdIScJSNsxDS6ziyR3qtUg2a_4wr9mTjHfYnibXhAZkIrr3MXz40x9YhEt9wFbhBUimoZDd76t6uM9dCEo5wum-z5Eu2xc5hVuSF307fxhnvmhgzfmNPlEudqKXGkNYxM1elD0XWStMsmDJ48aXN_R4tta013RfcNAdZDM6uuv1EoPYlBpOVf0vVtK0Fq-oTLY45Nua9LbwEPYLJMhVgEZ-BtdG4Utt-lvLCEcUK3pKVU8auLshJw-asAsv63R8S4">click here</a>
-            to file a report to Facebook, telling them they've got the wrong guy!
-        </p>
-
-        <button id="btn-redirect" type="button" class="btn btn-lg btn-primary btn-block mt-4">Take me to the page already!</button>
+        <div class="row">
+            <div class="col">
+                <h3 class="mb-4">To continue on to the blog, click here:</h3>
+                <a id="btn-redirect" href="#">
+                    <img src="./logo.jpg" class="d-block" />
+                </a>
+            </div>
+            <div class="col">
+                <h3 class="mb-4">To complain to Facebook, click here:</h3>
+                <a target="_blank" href="https://www.facebook.com/help/contact/571927962827151?additional_content=AeiocznJ5HPjVmYgskJ_XZd-K6oANGo0mt9enq4TpPG9vKGl__4xVkL7GduOgrtkdFWW4LX4zuOEhRZZanFCI8uAsB6r_nAVHvMOMtmkYf4RQ6IFepMu3pfpxhMPY6JYQWR5CfsPloB3SMDr0oW_FV9rOuIORWD45_5dZVVmM9i4xzJDrsAGsC_5zdgPklFQVw7yIHP3cMjM19J-Nk-xznwxbL3HmhxrDyOTeUd6nHnOshZjFDGvjTZmVxGEROZE3IJ1-rt10roxaeI2Fkea51CNJShgmwbkFN-ELRRk84RtPgZ_AQ9ieMQuhzOQmR4ORFFf_Y8gUESFcDX_NuLIwTHVTirhGv0b2XUxNohIm82tDQje2er1RcSH2FWDLW2Lz61rcc5o4RunYUluP3Y-Biwx7P3GoH8jQEkkSaIWCDBqwTGj65FICSUCFb1jdmhllpeL1uyPPKva297rVQYb7SxPj16JWiA0_c_7_MlJIusXfr-Z6SVwWwu02qyzSa-_9vSKVkhwZ2q8vvxaUQZ0SEyHCOtxWnPMp1w_9BfrJVSxy2KE1SSInGJ7nabHgk0qdrM9aE_A55ekdr4GdbgGBU0xIZnwgD0VxijfU270ZrO2e6kIn8N0C9DsFixieMNWt4ZxOF3RABr9X53Y9NirkkWj1E5p5bx1lbQTTahWQ78qQe-OF92vV8Vz_Ehz4KsW0mBsi0Yy5eCpInf542K-CrIWdIScJSNsxDS6ziyR3qtUg2a_4wr9mTjHfYnibXhAZkIrr3MXz40x9YhEt9wFbhBUimoZDd76t6uM9dCEo5wum-z5Eu2xc5hVuSF307fxhnvmhgzfmNPlEudqKXGkNYxM1elD0XWStMsmDJ48aXN_R4tta013RfcNAdZDM6uuv1EoPYlBpOVf0vVtK0Fq-oTLY45Nua9LbwEPYLJMhVgEZ-BtdG4Utt-lvLCEcUK3pKVU8auLshJw-asAsv63R8S4">
+                    <img src="./thumbs-down-facebook.jpg" class="d-block" style="max-width: 100%;" />
+                </a>
+            </div>
+        </div>
 
         <div class="d-flex justify-content-center mt-4">
-            <div id="spinner" class="spinner-border text-info" role="status" style="display: none;">
+            <div id="spinner" class="spinner-border text-primary" role="status" style="display: none;">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
